@@ -1,0 +1,14 @@
+{
+	"mixers": [
+		{
+			"input": [
+				"./src/models/user/user.prisma",
+                "./src/models/user/session.prisma",
+				"./src/models/file/file.prisma",
+				"./src/models/file/file_visible.prisma",
+				"./src/models/employee/employee.prisma"
+			],
+			"output": "prisma/schema.prisma"
+		}
+	]
+}

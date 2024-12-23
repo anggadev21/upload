@@ -1,0 +1,30 @@
+[
+    {
+        "code": "SK01",
+        "message": "unauthorized permission denied"
+    },
+    {
+        "code": "EG01",
+        "message": "Incorrect username or password"
+    },
+    {
+        "code": "EG02",
+        "message": "Logout Invalid"
+    },
+    {
+        "code": "EG03",
+        "message": "Cannot get data, invalid parameters"
+    },
+    {
+        "code": "EG04",
+        "message": "Cannot insert data, invalid data"
+    },
+    {
+        "code": "EG05",
+        "message": "Cannot update data, invalid data"
+    },
+    {
+        "code": "EG06",
+        "message": "Cannot delete data, invalid parameters"
+    }
+]

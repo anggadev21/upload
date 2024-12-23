@@ -1,0 +1,26 @@
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model File {
+    id          String    @id
+    url         String?
+    url_preview String?
+    file_id     String?
+    name        String?
+    size        Float?    @default(0)
+    type        String?
+    user_id     String?
+    created_by  User?     @relation(fields: [user_id], references: [id])
+    created_at  DateTime  @default(now())
+    updated_at  DateTime  @default(now())
+    deleted_at  DateTime?
+
+    @@map("file")
+}
+
+model User {
+    id   String @id
+    file File[]
+}
